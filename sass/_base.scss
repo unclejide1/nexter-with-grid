@@ -40,3 +40,21 @@ body{
     grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem,1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]
     minmax(6rem,1fr) [full-end];
 }
+
+.btn{
+    background-color: $color-primary;
+    border-radius: 0;
+    font-family: $font-display;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+
+
+    &:hover{
+        background-color: $color-primary-dark;
+    }
+}

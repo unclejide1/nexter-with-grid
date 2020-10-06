@@ -1,4 +1,5 @@
 .header {
+    background-color: $color-grey-dark-1;
     grid-column: full-start / col-end 6;
     background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero.jpeg);
     background-size: cover;
@@ -12,13 +13,13 @@
     grid-row-gap: 1.5rem;
     justify-content: center;
 
-    // @media only screen and (max-width: $bp-medium) {
-    //     grid-column: 1 / -1;
-    // }
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+    }
 
-    // @media only screen and (max-width: $bp-small) {
-    //     padding: 5rem;
-    // }
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem;
+    }
 
     &__logo {
         height: 3rem;
